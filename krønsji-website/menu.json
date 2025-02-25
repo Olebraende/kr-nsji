@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Krønsji Kyllingburger",
+        "description": "Saftig kyllingfilet med sprø skorpe, salat og hjemmelaget saus.",
+        "price": "129 NOK",
+        "image": "assets/images/burger.jpg"
+    },
+    {
+        "name": "Spicy Wings",
+        "description": "Krydret kyllingvinger med hot sauce.",
+        "price": "99 NOK",
+        "image": "assets/images/wings.jpg"
+    }
+]
