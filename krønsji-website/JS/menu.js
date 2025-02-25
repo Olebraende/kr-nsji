@@ -1,11 +1,19 @@
 document.addEventListener("DOMContentLoaded", async function () {
   const menuContainer = document.getElementById("menu");
+  let menuItems = [];
 
   try {
     const response = await fetch("menu.json");
-    const menuItems = await response.json();
+    menuItems = await response.json();
+    displayMenu(menuItems);
+  } catch (error) {
+    console.error("Feil ved lasting av menyen:", error);
+  }
 
-    menuItems.forEach((item) => {
+  // Funksjon for å vise menyen
+  function displayMenu(items) {
+    menuContainer.innerHTML = "";
+    items.forEach((item) => {
       const menuItem = document.createElement("div");
       menuItem.classList.add("menu-item");
 
@@ -18,7 +26,14 @@ document.addEventListener("DOMContentLoaded", async function () {
 
       menuContainer.appendChild(menuItem);
     });
-  } catch (error) {
-    console.error("Feil ved lasting av menyen:", error);
   }
+
+  // Søkefunksjon
+  window.filterMenu = function () {
+    const searchQuery = document.getElementById("search").value.toLowerCase();
+    const filteredItems = menuItems.filter((item) =>
+      item.name.toLowerCase().includes(searchQuery)
+    );
+    displayMenu(filteredItems);
+  };
 });
