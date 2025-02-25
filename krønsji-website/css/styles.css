@@ -1,112 +1,164 @@
-/* Importerer en bedre font */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+/* Global */
+.patrick-hand-regular {
+  font-family: "Patrick Hand", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 body {
-  font-family: "Montserrat", sans-serif;
-  background-color: #fff8e1;
-  color: #333;
+  font-family: "Patrick Hand", serif;
+  line-height: 1.6;
+  background-color: #fdf5e6;
   margin: 0;
   padding: 0;
+  display: block;
+  scroll-behavior: smooth;
 }
 
-/* Header og navigasjon */
-header {
-  background-color: #e63946;
-  color: white;
-  padding: 15px 20px;
-  text-align: center;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 100;
+h1,
+h2,
+h3 {
+  letter-spacing: 1px;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Hero-seksjonen */
-.hero {
-  text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(to right, #ff8c00, #ffb347);
-  color: white;
-}
-
-.hero h2 {
-  font-size: 2.5rem;
-}
-
-.hero p {
-  font-size: 1.2rem;
-}
-
-/* Knapper */
-.btn {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: #ffd700;
-  color: #333;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.btn:hover {
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
   background-color: #ffcc00;
-  transform: scale(1.05);
+  position: sticky;
 }
 
-/* Menyseksjonen */
-#menu {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 40px;
+.logo {
+  display: flex;
+  align-items: center;
 }
 
-.menu-item {
-  background: white;
+.logo h1 {
+  position: relative;
+  margin-left: 7em;
+  font-size: 2em;
+  color: black;
+  cursor: pointer;
+}
+
+.logo img {
+  height: 200px;
+  margin-left: -50px;
+  margin-top: 100px;
+  margin-right: 10px;
+  position: absolute;
+}
+
+/* Navigation */
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav a:hover {
+  color: #d35400;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 25%;
   padding: 15px;
+  background-color: #fff3cd;
   border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Menu Section */
+.menu-container {
+  flex-grow: 1;
+  padding: 15px;
+  width: 100%;
+  max-width: none;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+/* Menu Item */
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: white;
+  width: 100%;
+  max-width: 400px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .menu-item:hover {
-  transform: translateY(-5px);
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Menu Item Image */
 .menu-item img {
-  width: 100%;
-  border-radius: 8px;
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: transform 0.2s ease-in-out;
 }
 
-.menu-item h3 {
-  margin: 10px 0;
+.menu-item:hover img {
+  transform: rotate(5deg);
+}
+
+/* Footer */
+.footer {
+  background-color: #ffcc00;
+  text-align: center;
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .menu-items {
+    justify-content: center;
+  }
 }
 
 /* Animasjon */
 @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
   to {
     opacity: 1;
     transform: translateY(0);
