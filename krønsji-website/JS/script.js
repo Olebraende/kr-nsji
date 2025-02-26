@@ -1,5 +1,3 @@
-// script.js
-
 document.addEventListener("DOMContentLoaded", () => {
   const menuContainer = document.querySelector(".menu-items");
   const searchInput = document.querySelector("#menu-search");
@@ -14,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "Fried Chicken Deluxe",
       price: "99Kr",
       allergies: "gluten, melk, soya",
-      image: "images/fried_chicken.jpg",
+      image: "./Assets/images/IMG_4621.jpeg",
     },
     {
       name: "Spicy Wings",
@@ -77,4 +75,18 @@ document.addEventListener("DOMContentLoaded", () => {
       renderMenu(filteredItems);
     });
   }
+
+  const toTopButton = document.getElementById("toTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      toTopButton.classList.add("show");
+    } else {
+      toTopButton.classList.remove("show");
+    }
+  });
+
+  toTopButton.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 });

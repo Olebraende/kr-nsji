@@ -9,6 +9,8 @@ body {
   font-family: "Patrick Hand", serif;
   line-height: 1.6;
   background-color: #fdf5e6;
+  background: #ffd483
+    url("https://www.transparenttextures.com/patterns/white-wall.png");
   margin: 0;
   padding: 0;
   display: block;
@@ -54,6 +56,7 @@ h3 {
 
 /* Navigation */
 .nav a {
+  position: relative;
   margin: 0 15px;
   text-decoration: none;
   color: black;
@@ -63,6 +66,22 @@ h3 {
 
 .nav a:hover {
   color: #d35400;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background-color: #d35400;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav a:hover::after {
+  transform: scaleX(1);
 }
 
 /* Layout */
@@ -81,6 +100,10 @@ h3 {
 
 /* Menu Section */
 .menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex-grow: 1;
   padding: 15px;
   width: 100%;
@@ -88,10 +111,10 @@ h3 {
 }
 
 .menu-items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 15px;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: space-evenly;
+  gap: 40px;
 }
 
 /* Menu Item */
@@ -101,9 +124,8 @@ h3 {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 10px;
-  background-color: white;
-  width: 100%;
-  max-width: 400px;
+  background-color: #fff3cd;
+  width: 500px;
   transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -114,8 +136,8 @@ h3 {
 
 /* Menu Item Image */
 .menu-item img {
-  width: 80px;
-  height: 80px;
+  width: 200px;
+  height: 200px;
   border-radius: 5px;
   margin-right: 10px;
   transition: transform 0.2s ease-in-out;
@@ -164,3 +186,23 @@ h3 {
     transform: translateY(0);
   }
 }
+
+/* To top btn */
+#toTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: none;
+}
+
+#toTop.show {
+  display: block;
+}
+
+/* Scrolbar */
