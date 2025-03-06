@@ -18,13 +18,13 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "Spicy Wings",
       price: "79Kr",
       allergies: "gluten, melk",
-      image: "images/spicy_wings.jpg",
+      image: "./Assets/images/IMG_4633.jpeg",
     },
     {
       name: "Crispy Strips",
       price: "89Kr",
       allergies: "gluten, egg",
-      image: "images/crispy_strips.jpg",
+      image: "./Assets/images/IMG_4641.jpeg",
     },
   ];
 
