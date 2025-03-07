@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+/*document.addEventListener('DOMContentLoaded', () => {
   const languageSelector = document.getElementById('languageSelector');
   const elementsToTranslate = document.querySelectorAll('[data-translate]');
 
@@ -11,7 +11,16 @@ document.addEventListener('DOMContentLoaded', () => {
       address: 'Addresse',
       phone: 'Telefon',
       socialMedia: 'Sosiale medier',
-      toTop: '⬆ Til Toppen'
+      toTop: '⬆ Til Toppen',
+      allergies: 'Allergier',
+      menuSection: 'Meny',
+      friedChickenDeluxe: 'Fried Chicken Deluxe',
+      spicyWings: 'Spicy Wings',
+      crispyStrips: 'Crispy Strips',
+      gluten: 'gluten',
+      milk: 'melk',
+      soy: 'soya',
+      egg: 'egg'
     },
     en: {
       menu: 'Menu',
@@ -21,7 +30,16 @@ document.addEventListener('DOMContentLoaded', () => {
       address: 'Address',
       phone: 'Phone',
       socialMedia: 'Social Media',
-      toTop: '⬆ To Top'
+      toTop: '⬆ To Top',
+      allergies: 'Allergies',
+      menuSection: 'Menu',
+      friedChickenDeluxe: 'Fried Chicken Deluxe',
+      spicyWings: 'Spicy Wings',
+      crispyStrips: 'Crispy Strips',
+      gluten: 'gluten',
+      milk: 'milk',
+      soy: 'soy',
+      egg: 'egg'
     }
   };
 
@@ -33,3 +51,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+/*

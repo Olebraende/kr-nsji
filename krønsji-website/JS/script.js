@@ -11,53 +11,60 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       name: "Fried Chicken Deluxe",
       price: "99Kr",
-      allergies: "gluten, melk, soya",
+      allergies: ["gluten", "melk", "soya"],
       image: "./Assets/images/IMG_4621.jpeg",
     },
     {
       name: "Spicy Wings",
       price: "79Kr",
-      allergies: "gluten, melk",
+      allergies: ["gluten", "melk"],
       image: "./Assets/images/IMG_4633.jpeg",
     },
     {
       name: "Crispy Strips",
       price: "89Kr",
-      allergies: "gluten, egg",
+      allergies: ["gluten", "egg"],
       image: "./Assets/images/IMG_4641.jpeg",
     },
   ];
 
+  function createMenuItemElement(item) {
+    const menuItemElement = document.createElement("div");
+    menuItemElement.classList.add("menu-item");
+
+    const imgElement = document.createElement("img");
+    imgElement.src = item.image;
+    imgElement.alt = item.name;
+
+    const textContainer = document.createElement("div");
+    textContainer.classList.add("menu-text");
+
+    const nameElement = document.createElement("h3");
+    nameElement.textContent = item.name;
+
+    const allergiesElement = document.createElement("p");
+    allergiesElement.textContent = `Allergier: ${item.allergies.join(', ')}`;
+
+    const priceElement = document.createElement("p");
+    priceElement.textContent = item.price;
+    priceElement.classList.add("price");
+
+    textContainer.appendChild(nameElement);
+    textContainer.appendChild(allergiesElement);
+    textContainer.appendChild(priceElement);
+
+    menuItemElement.appendChild(imgElement);
+    menuItemElement.appendChild(textContainer);
+
+    return menuItemElement;
+  }
+
   function renderMenu(items) {
-    menuContainer.innerHTML = ""; // Rens menyen før ny rendering
+    while (menuContainer.firstChild) {
+      menuContainer.removeChild(menuContainer.firstChild);
+    }
     items.forEach((item) => {
-      const menuItemElement = document.createElement("div");
-      menuItemElement.classList.add("menu-item");
-
-      const imgElement = document.createElement("img");
-      imgElement.src = item.image;
-      imgElement.alt = item.name;
-
-      const textContainer = document.createElement("div");
-      textContainer.classList.add("menu-text");
-
-      const nameElement = document.createElement("h3");
-      nameElement.textContent = item.name;
-
-      const allergiesElement = document.createElement("p");
-      allergiesElement.textContent = `Allergies: ${item.allergies}`;
-
-      const priceElement = document.createElement("p");
-      priceElement.textContent = item.price;
-      priceElement.classList.add("price");
-
-      textContainer.appendChild(nameElement);
-      textContainer.appendChild(allergiesElement);
-      textContainer.appendChild(priceElement);
-
-      menuItemElement.appendChild(imgElement);
-      menuItemElement.appendChild(textContainer);
-
+      const menuItemElement = createMenuItemElement(item);
       menuContainer.appendChild(menuItemElement);
     });
   }

@@ -9,10 +9,10 @@
     font-family: "Patrick Hand", serif;
     line-height: 1.6;
     background-color: #fdf5e6;
-    background: #ffd483
+    background: #b69a67
       url("https://www.transparenttextures.com/patterns/white-wall.png");
     margin: 0;
-    padding: 0;
+    padding: 0; 
     display: block;
     scroll-behavior: smooth;
   }
@@ -29,7 +29,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #ffcc00;
+    background-color: #ffeeac;
     position: sticky;
   }
   

@@ -12,7 +12,8 @@
     <title>Krønsji - Fried Chicken</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <script src="./js/script.js" defer></script>
-    <script src="./js/language.js" defer></script>
+    <script src="jquery.js" defer>  </script>
+    <script src="jquery.translate.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -24,28 +25,26 @@
         <h1>Krønsji</h1>
       </div>
       <nav class="nav">
-        <a href="#menu" data-translate="menu">Meny</a>
-        <a href="#about" data-translate="about">Om oss</a>
-        <a href="#contact" data-translate="contact">Kontakt oss</a>
-        <select id="languageSelector">
-          <option value="no">Norsk</option>
-          <option value="en">English</option>
-        </select>
+        <a href="#menu">Meny</a>
+        <a href="#about">Om oss</a>
+        <a href="#contact">Kontakt oss</a>
       </nav>
     </header>
 
     <div class="container">
       <aside class="sidebar">
-        <h3 data-translate="openingHours">Åpningstider</h3>
+        <h3>Åpningstider</h3>
         <p>Man - Fre: 10:00 - 22:00</p>
         <p>Lør - Søn: 12:00 - 23:00</p>
-        <h3 data-translate="address">Addresse:</h3>
+        <h3>Addresse:</h3>
         <p>Storgata 15, 0155 Oslo</p>
-        <h3 data-translate="phone">Telefon:</h3>
+        <h3>Telefon:</h3>
         <p>+47 123 45 678</p>
-        <h3 data-translate="socialMedia">Sosiale medier</h3>
+        <h3>Sosiale medier</h3>
         <a href="#"><img src="instagram.png" alt="Instagram" /></a>
         <a href="#"><img src="facebook.png" alt="Facebook" /></a>
+        <h3>Allergier</h3>
+        <p>Informasjon om allergener</p>
       </aside>
 
       <main class="menu-container" id="menu">
@@ -54,6 +53,6 @@
       </main>
     </div>
 
-    <button id="toTop" data-translate="toTop">⬆ Til Toppen</button>
+    <button id="toTop">⬆ Til Toppen</button>
   </body>
 </html>
