@@ -253,46 +253,37 @@ h3 {
 /* Contact Form */
 .contact-container {
   width: 750px;
-  margin-top: -20px;
+  margin-top: 5px;
   margin-left: 80px;
   padding: 15px;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 1px 1px 10px black;
+  text-align: center;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
+.contact-container h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: 800;
 }
 
-.contact-form label {
-  margin-top: 10px;
+.contact-container p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.email-link,
+.phone-link {
+  font-size: 1.2em;
+  color: #d62626;
+  text-decoration: none;
   font-weight: bold;
 }
 
-.contact-form input,
-.contact-form textarea {
-  margin-top: 5px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  max-width: 700px;
-}
-
-.contact-form button {
-  margin: 25px;
-  margin-left: 0px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #ffcc00;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.contact-form button:hover {
-  background-color: #e6b800;
+.email-link:hover,
+.phone-link:hover {
+  text-decoration: underline;
 }
 
 /* Scrolbar */

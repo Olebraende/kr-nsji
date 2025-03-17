@@ -23,57 +23,44 @@
     </header>
 
     <div class="container">
-        <aside class="sidebar">
-          <h3>Ring og bestill</h3>
-          <p>+47 123 45 678</p>
-          <h3>Åpningstider</h3>
-          <p>Man - Fre: 10:00 - 22:00</p>
-          <p>Lør - Søn: 12:00 - 23:00</p>
-          <h3>Addresse:</h3>
-          <p>Storgata 15, 0155 Oslo</p>
-          <h3>Telefon:</h3>
-          <p>+47 123 45 678</p>
-          <h3>Sosiale medier</h3>
-          <a href="#"
-            ><img
-              class="instagramLogo"
-              src="./Assets/images/instragram.png"
-              alt="Instagram"
-          /></a>
-          <a href="#"
-            ><img
-              class="facebookLogo"
-              src="./Assets/images/facebook.png"
-              alt="Facebook"
-          /></a>
-          <p>&copy; 2025 Krønsji. Alle rettigheter reservert.</p>
-        </aside>
+      <aside class="sidebar">
+        <h3>Ring og bestill</h3>
+        <p>+47 123 45 678</p>
+        <h3>Åpningstider</h3>
+        <p>Man - Fre: 10:00 - 22:00</p>
+        <p>Lør - Søn: 12:00 - 23:00</p>
+        <h3>Addresse:</h3>
+        <p>Storgata 15, 0155 Oslo</p>
+        <h3>Telefon:</h3>
+        <p>+47 123 45 678</p>
+        <h3>Sosiale medier</h3>
+        <a href="#"
+          ><img
+            class="instagramLogo"
+            src="./Assets/images/instragram.png"
+            alt="Instagram"
+        /></a>
+        <a href="#"
+          ><img
+            class="facebookLogo"
+            src="./Assets/images/facebook.png"
+            alt="Facebook"
+        /></a>
+        <p>&copy; 2025 Krønsji. Alle rettigheter reservert.</p>
+      </aside>
 
-    <main class="contact-container">
-      <h2>Kontakt oss</h2>
-      <form id="contactForm" action="https://formspree.io/f/xovevlgy" method="POST">
-        <label for="name">Navn:</label>
-        <input type="text" id="name" name="name" required>
-      
-        <label for="email">E-post:</label>
-        <input type="email" id="email" name="email" required>
-      
-        <label for="message">Melding:</label>
-        <textarea id="message" name="message" required></textarea>
-      
-        <button type="submit">Send</button>
-      </form>
-      
-      <p id="statusMessage"></p>
-
-      <script>
-        const form = document.getElementById("contactForm");
-      
-        form.addEventListener("submit", function(event) {
-          document.getElementById("statusMessage").innerText = "Takk! E-posten din ble sendt.";
-        });
-      </script>
-      
-    </main>
+      <main class="contact-container">
+        <h2>Kontakt oss</h2>
+        <p>For å kontakte oss, vennligst send en e-post til:</p>
+        <p>
+          <a href="mailto:kontakt@kronsji.no" class="email-link"
+            >kontakt@kronsji.no</a
+          >
+        </p>
+        <p>eller ring oss på:</p>
+        <p><a href="tel:+4712345678" class="phone-link">+47 123 45 678</a></p>
+        <p>Vi ser frem til å høre fra deg!</p>
+      </main>
+    </div>
   </body>
 </html>
