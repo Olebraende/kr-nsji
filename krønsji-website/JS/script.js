@@ -293,7 +293,8 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       name: "Dips",
-      description: "Chili Mayo/Garlic/BBQ/Extra Hot Chili Mayo/Honey Mustard/Sweet Chili",
+      description:
+        "Chili Mayo/Garlic/BBQ/Extra Hot Chili Mayo/Honey Mustard/Sweet Chili",
       price: "29Kr",
       allergies: ["gluten", "melk"],
       image: "./Assets/images/krønsjiDips.jpg",
@@ -310,8 +311,6 @@ document.addEventListener("DOMContentLoaded", () => {
       image: "./Assets/images/cola.png",
     },
   ];
-
-
 
   function createBurgerItemElement(item) {
     const menuItemElement = document.createElement("div");
@@ -345,7 +344,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     menuItemElement.appendChild(imgElement);
     menuItemElement.appendChild(textContainer);
-    
+
     return menuItemElement;
   }
 
@@ -367,19 +366,19 @@ document.addEventListener("DOMContentLoaded", () => {
   renderMenu(sides);
   renderMenu(drikke);
 
-  buttons.forEach(button => {
+  buttons.forEach((button) => {
     button.addEventListener("click", (e) => {
       // Remove active class from all buttons
-      buttons.forEach(btn => btn.classList.remove("button-active"));
-  
+      buttons.forEach((btn) => btn.classList.remove("button-active"));
+
       // Add active class to clicked button
       e.target.classList.add("button-active");
-  
+
       // Clear menu content
       while (menuContainer.firstChild) {
         menuContainer.removeChild(menuContainer.firstChild);
       }
-  
+
       // Render menu based on clicked button
       switch (e.target.id) {
         case "buttonAlle":
@@ -430,6 +429,26 @@ document.addEventListener("DOMContentLoaded", () => {
       renderMenu(filteredItems);
     });
   }
+
+  let lastScrollTop = 0;
+  const header = document.querySelector(".header");
+
+  window.addEventListener("scroll", function () {
+    let scrollTop = window.scrollY;
+    if (scrollTop > lastScrollTop) {
+      header.classList.add("hide-nav");
+    } else {
+      header.classList.remove("hide-nav");
+    }
+    lastScrollTop = scrollTop;
+  });
+
+  const menuToggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".nav");
+
+  menuToggle.addEventListener("click", () => {
+    nav.classList.toggle("open");
+  });
 
   const toTopButton = document.getElementById("toTop");
 
