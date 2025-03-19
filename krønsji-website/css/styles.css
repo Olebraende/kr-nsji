@@ -99,7 +99,7 @@ h3 {
 
 /* Sidebar */
 .sidebar {
-  width: 25%;
+  min-width: 20%;
   max-width: 315px;
   max-height: fit-content;
   padding: 15px;
