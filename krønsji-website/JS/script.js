@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
       description: "2 Strips + 2 Crispy Salad + Cheese + BBQ + Chili Mayo",
       price: "129Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4623.jpeg",
+      image: "./Assets/images/krønsjiBurger.jpeg",
     },
     {
       name: "Krønsji Burger Korean",
@@ -23,42 +23,42 @@ document.addEventListener("DOMContentLoaded", () => {
         "2 Korean Strips + 2 Crispy Salad + Cheese + BBQ + Chili Mayo",
       price: "139Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4623.jpeg",
+      image: "./Assets/images/krønsjiBurgerKorean.jpg",
     },
     {
       name: "Krønsji Burger Hot",
       description: "2 Hot Strips + 2 Crispy Salad + Cheese + BBQ + Chili Mayo",
       price: "139Kr",
       allergies: ["gluten", "egg"],
-      image: "./Assets/images/IMG_4623.jpeg",
+      image: "./Assets/images/krønsjiBurgerHot.jpg",
     },
     {
       name: "Krønsji Burger Honey Mustard",
       description: "2 Strips + 2 Crispy Salad + Honey Mustard + Cheese + BBQ",
       price: "139Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4623.jpeg",
+      image: "./Assets/images/krønsjiBurgerHoneyMustard.jpg",
     },
     {
       name: "Krønsji Burger Avocado",
       description: "2 Strips + 2 Crispy Salad + Avocado Sauce + Cheese + BBQ",
       price: "139Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4634.jpeg",
+      image: "./Assets/images/krønsjiAvocadoBurger.jpeg",
     },
     {
       name: "Krønsji Burger Coleslaw",
       description: "4 Strips + 2 Crispy Salad + Cheese + BBQ + Chili Mayo",
       price: "169Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4623.jpeg",
+      image: "./Assets/images/krønsjiColeslawBurger.jpg",
     },
     {
       name: "Double Krønsji Burger",
       description: "2 Strips + 2 Crispy Salad + Cheese + BBQ + Chili Mayo",
       price: "129Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4633.jpeg",
+      image: "./Assets/images/krønsjiDoubleBurger.jpeg",
     },
   ];
 
@@ -69,21 +69,21 @@ document.addEventListener("DOMContentLoaded", () => {
       description: "",
       price: "129Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4639.jpeg",
+      image: "./Assets/images/krønsjiWrap.jpg",
     },
     {
       name: "Krønsji Wrap Korean",
       description: "",
       price: "139Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4639.jpeg",
+      image: "./Assets/images/krønsjiWrapKorean.jpeg",
     },
     {
       name: "Krønsji Wrap Hot",
       description: "",
       price: "139Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4639.jpeg",
+      image: "./Assets/images/krønsjiWrapHot.jpg",
     },
   ];
 
@@ -94,21 +94,21 @@ document.addEventListener("DOMContentLoaded", () => {
       description: "1 Strip + Sweet Chili + Cheese",
       price: "79Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4638.jpeg",
+      image: "./Assets/images/krønsjiCriossantSweet.jpg",
     },
     {
       name: "Honey Croissant",
       description: "1 Strip + Honey Mustard + Cheese",
       price: "79Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4636.jpeg",
+      image: "./Assets/images/krønsjiCroissantHoneyMustard.jpeg",
     },
     {
       name: "BBQ Croissant",
       description: "1 Strip + BBQ + Cheese",
       price: "79Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4636.jpeg",
+      image: "./Assets/images/krønsjiCriossantBBQ.jpg",
     },
   ];
 
@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
       description: "2 Strips + Salad + Fries + BBQ + Chili Mayo",
       price: "129Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4622.jpeg",
+      image: "./Assets/images/krønsjiBaguette.jpeg",
     },
   ];
 
@@ -130,56 +130,56 @@ document.addEventListener("DOMContentLoaded", () => {
       description: "6 Crunchy Wings",
       price: "74Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4626.jpeg",
+      image: "./Assets/images/krønsjiWings6.jpg",
     },
     {
       name: "Krønsji Wings",
       description: "12 Crunchy Wings",
       price: "136Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4626.jpeg",
+      image: "./Assets/images/krønsjiWings12.jpg",
     },
     {
       name: "Hot Buffalo Wings",
       description: "6 Hot Wings",
       price: "109Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4626.jpeg",
+      image: "./Assets/images/krønsjiWingsHot.jpeg",
     },
     {
       name: "Hot Buffalo Wings",
       description: "12 Hot Wings",
       price: "159Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4626.jpeg",
+      image: "./Assets/images/krønsjiWingsHot.jpeg",
     },
     {
       name: "Korean Wings",
       description: "6 Korean Wings",
       price: "109Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4626.jpeg",
+      image: "./Assets/images/krønsjiWingsKorean.jpg",
     },
     {
       name: "Korean Wings",
       description: "12 Korean Wings",
       price: "159Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4626.jpeg",
+      image: "./Assets/images/krønsjiWingsKorean.jpg",
     },
     {
       name: "Krønsji Strips",
       description: "4 Crunchy Strips",
       price: "159Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4621.jpeg",
+      image: "./Assets/images/krønsjiStrips.jpeg",
     },
     {
       name: "Krønsji Strips",
       description: "8 Crunchy Strips",
       price: "279Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4621.jpeg",
+      image: "./Assets/images/krønsjiStrips.jpeg",
     },
   ];
 
@@ -190,42 +190,35 @@ document.addEventListener("DOMContentLoaded", () => {
       description: "3 Strips + 3 Wings",
       price: "129Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4635.jpeg",
+      image: "./Assets/images/krønsjiCombo3+3.jpg",
     },
     {
       name: "Combo Box",
       description: "5 Strips + 5 Wings",
       price: "219Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4635.jpeg",
+      image: "./Assets/images/krønsjiCombo5+5.jpg",
     },
     {
       name: "Combo Box",
       description: "8 Strips + 8 Wings",
       price: "339Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4635.jpeg",
+      image: "./Assets/images/krønsjiCombo8+8.jpg",
     },
     {
       name: "Sharing Box",
       description: "9 Wings + 9 Strips + 2 Normal Fries + 2 Dips",
       price: "419Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4635.jpeg",
+      image: "./Assets/images/krønsjiSharing.jpg",
     },
     {
       name: "Wings Bucket",
       description: "36 Wings + 2 Normal Fries + 3 Dips",
       price: "419Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4635.jpeg",
-    },
-    {
-      name: "Wings Bucket",
-      description: "36 Wings + 2 Normal Fries + 3 Dips",
-      price: "419Kr",
-      allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4630.jpeg",
+      image: "./Assets/images/krønsjiBucket.jpg",
     },
     {
       name: "Snackbox 1",
@@ -233,7 +226,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Fries + Crispy Onions + Jalapenos/Chili Mayo + BBQ + Cheese",
       price: "79Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4630.jpeg",
+      image: "./Assets/images/krønsjiSnackBox1.jpg",
     },
     {
       name: "Snackbox 2",
@@ -241,7 +234,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "2 Strips + Fries + Crispy Onions + Jalapenos/Chili Mayo + BBQ + Cheese",
       price: "139Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4630.jpeg",
+      image: "./Assets/images/krønsjiSnackBox234.jpg",
     },
     {
       name: "Snackbox Korean",
@@ -249,7 +242,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "2 Korean Strips + Fries + Crispy Onions + Jalapenos/Chili Mayo + BBQ + Cheese",
       price: "149Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4630.jpeg",
+      image: "./Assets/images/krønsjiSnackBox234.jpg",
     },
     {
       name: "Snackbox Hot",
@@ -257,7 +250,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "2 Hot Strips + Fries + Crispy Onions + Jalapenos/Chili Mayo + BBQ + Cheese",
       price: "149Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4630.jpeg",
+      image: "./Assets/images/krønsjiSnackBox234.jpg",
     },
   ];
 
@@ -268,42 +261,43 @@ document.addEventListener("DOMContentLoaded", () => {
       description: "",
       price: "49Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4630.jpeg",
+      image: "./Assets/images/krønsjiFries.jpg",
     },
     {
       name: "Curly Fries",
       description: "",
       price: "74Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4630.jpeg",
+      image: "./Assets/images/krønsjiCurlyFries.jpg",
     },
     {
       name: "Sweet Fries",
       description: "",
       price: "59Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4630.jpeg",
+      image: "./Assets/images/krønsjiSweetFries.jpg",
     },
     {
       name: "Onion Rings (5 stk)",
       description: "",
       price: "49Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4630.jpeg",
+      image: "./Assets/images/krønsjiOnionRing.jpg",
     },
     {
       name: "Chili Cheese (5 stk)",
       description: "",
       price: "49Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4630.jpeg",
+      image: "./Assets/images/krønsjiChiliCheese.jpg",
     },
     {
       name: "Dips",
-      description: "Chili Mayo/Garlic/BBQ/Extra Hot Chili Mayo/Honey Mustard/Sweet Chili",
+      description:
+        "Chili Mayo/Garlic/BBQ/Extra Hot Chili Mayo/Honey Mustard/Sweet Chili",
       price: "29Kr",
       allergies: ["gluten", "melk"],
-      image: "./Assets/images/IMG_4630.jpeg",
+      image: "./Assets/images/krønsjiDips.jpg",
     },
   ];
 
@@ -314,11 +308,9 @@ document.addEventListener("DOMContentLoaded", () => {
       description: "",
       price: "39Kr",
       allergies: [""],
-      image: "./Assets/images/drikkeCola.png",
+      image: "./Assets/images/cola.png",
     },
   ];
-
-
 
   function createBurgerItemElement(item) {
     const menuItemElement = document.createElement("div");
@@ -352,7 +344,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     menuItemElement.appendChild(imgElement);
     menuItemElement.appendChild(textContainer);
-    
+
     return menuItemElement;
   }
 
@@ -374,19 +366,19 @@ document.addEventListener("DOMContentLoaded", () => {
   renderMenu(sides);
   renderMenu(drikke);
 
-  buttons.forEach(button => {
+  buttons.forEach((button) => {
     button.addEventListener("click", (e) => {
       // Remove active class from all buttons
-      buttons.forEach(btn => btn.classList.remove("button-active"));
-  
+      buttons.forEach((btn) => btn.classList.remove("button-active"));
+
       // Add active class to clicked button
       e.target.classList.add("button-active");
-  
+
       // Clear menu content
       while (menuContainer.firstChild) {
         menuContainer.removeChild(menuContainer.firstChild);
       }
-  
+
       // Render menu based on clicked button
       switch (e.target.id) {
         case "buttonAlle":
@@ -437,6 +429,26 @@ document.addEventListener("DOMContentLoaded", () => {
       renderMenu(filteredItems);
     });
   }
+
+  let lastScrollTop = 0;
+  const header = document.querySelector(".header");
+
+  window.addEventListener("scroll", function () {
+    let scrollTop = window.scrollY;
+    if (scrollTop > lastScrollTop) {
+      header.classList.add("hide-nav");
+    } else {
+      header.classList.remove("hide-nav");
+    }
+    lastScrollTop = scrollTop;
+  });
+
+  const menuToggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".nav");
+
+  menuToggle.addEventListener("click", () => {
+    nav.classList.toggle("open");
+  });
 
   const toTopButton = document.getElementById("toTop");
 
