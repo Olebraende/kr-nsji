@@ -280,84 +280,84 @@ document.addEventListener("DOMContentLoaded", () => {
       description: "ost, tomatsaus",
       price: "119Kr / 209kr",
       allergies: ["gluten"],
-      image: "./Assets/images/krønsjiBaguette.jpeg",
+      image: "",
     },
     {
       name: "Svolten Pizza",
       description: "ost, marinert kylling, marinert biff, paprika, løk, sjampinjong",
       price: "159Kr / 259kr",
       allergies: ["gluten"],
-      image: "./Assets/images/krønsjiBaguette.jpeg",
+      image: "",
     },
     {
       name: "Kylling Pizza",
       description: "ost, marinert kylling, paprika, løk",
       price: "149Kr / 239kr",
       allergies: ["gluten"],
-      image: "./Assets/images/krønsjiBaguette.jpeg",
+      image: "",
     },
     {
       name: "Taco Pizza",
       description: "ost, biff, kjøttdeig, hvitløk, jalapeños",
       price: "149Kr / 239kr",
       allergies: ["gluten"],
-      image: "./Assets/images/krønsjiBaguette.jpeg",
+      image: "",
     },
     {
       name: "Kebab Pizza",
       description: "ost, kebab kjøtt, salat, agurk, rødløk, tomat, hvitløk, dressing",
       price: "159Kr / 259kr",
       allergies: ["gluten, egg"],
-      image: "./Assets/images/krønsjiBaguette.jpeg",
+      image: "",
     },
     {
       name: "Krønsji Pizza",
       description: "ost, hvit saus, crispy strips, pomemes frites, honey mustard, dressing",
       price: "179Kr / 279kr",
       allergies: ["gluten, egg"],
-      image: "./Assets/images/krønsjiBaguette.jpeg",
+      image: "",
     },
     {
       name: "Krønsji Hot Pizza",
       description: "ost, hvit saus, crispy strips, pomemes frites, jalapeños, chili mayo dressing",
       price: "179Kr / 279kr",
       allergies: ["gluten, egg"],
-      image: "./Assets/images/krønsjiBaguette.jpeg",
+      image: "",
     },
     {
       name: "Pepperoni Pizza",
       description: "ost, løk, pepperoni, paprika, sjampinjong",
       price: "149Kr / 239kr",
       allergies: ["gluten"],
-      image: "./Assets/images/krønsjiBaguette.jpeg",
+      image: "",
     },
     {
       name: "Skinke Pizza",
       description: "ost, skinke, tomatsaus",
       price: "149Kr / 239kr",
       allergies: ["gluten"],
-      image: "./Assets/images/krønsjiBaguette.jpeg",
+      image: "",
     },
     {
       name: "Hawaii Pizza",
       description: "ost, skinke, ananas",
       price: "149Kr / 239kr",
       allergies: ["gluten"],
-      image: "./Assets/images/krønsjiBaguette.jpeg",
+      image: "",
     },
     {
       name: "Allan Pizza",
       description: "ost, skinke, kjøttdeig, pepperoni, løk, sjampinjong",
       price: "149Kr / 249kr",
       allergies: ["gluten"],
-      image: "./Assets/images/krønsjiBaguette.jpeg",
+      image: "",
     },
     {
       name: "Bolognese Pizza",
       description: "ost, kjøttdeig, løk",
       price: "135Kr / 215kr",
       allergies: ["gluten"],
-      image: "./Assets/images/krønsjiBaguette.jpeg",
+      image: "",
     },
   ]
 
@@ -459,8 +459,11 @@ document.addEventListener("DOMContentLoaded", () => {
     menuItemElement.classList.add("menu-item");
 
     const imgElement = document.createElement("img");
-    imgElement.src = item.image;
-    imgElement.alt = item.name;
+    if (item.image != "") {
+      imgElement.src = item.image;
+      imgElement.alt = item.name;
+    }
+   
 
     const textContainer = document.createElement("div");
     textContainer.classList.add("menu-text");
@@ -483,7 +486,10 @@ document.addEventListener("DOMContentLoaded", () => {
     textContainer.appendChild(descriptionElement);
     textContainer.appendChild(allergiesElement);
     textContainer.appendChild(priceElement);
-    menuItemElement.appendChild(imgElement);
+    if(imgElement.src != ""){
+      menuItemElement.appendChild(imgElement);
+    }
+   
     menuItemElement.appendChild(textContainer);
 
     return menuItemElement;
