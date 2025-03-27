@@ -235,8 +235,10 @@ h3 {
   display: none;
 }
 
+
 #toTop.show {
   display: block;
+  
 }
 
 /* Contact Form */
