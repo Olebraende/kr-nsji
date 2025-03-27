@@ -238,7 +238,7 @@ h3 {
 
 #toTop.show {
   display: block;
-  
+
 }
 
 /* Contact Form */
@@ -337,6 +337,11 @@ h3 {
     flex-direction: row;
     align-items: center;
   }
+  .menu-text{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    gap: 20px;
+  }
 }
 
 @media (min-width: 769px) and (max-width:1110px) {
@@ -349,5 +354,10 @@ h3 {
   }
   .menu-items {
     grid-template-columns: auto;
+  }
+  .menu-text{
+    gap: 0;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
