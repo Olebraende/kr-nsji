@@ -401,49 +401,49 @@ document.addEventListener("DOMContentLoaded", () => {
       description: "",
       price: "40Kr",
       allergies: [""],
-      image: "./Assets/images/cola.png",
+      image: "./Assets/images/krønsjiCocaCola.png",
     },
     {
       name: "Coca Cola Zero 0.5L",
       description: "",
       price: "40Kr",
       allergies: [""],
-      image: "./Assets/images/cola.png",
+      image: "./Assets/images/krønsjiColaZero.png",
     },
     {
       name: "Fanta Orange 0.5L",
       description: "",
       price: "40Kr",
       allergies: [""],
-      image: "./Assets/images/cola.png",
+      image: "./Assets/images/krønsjiFantaOrange.png",
     },
     {
       name: "Fanta Orange Zero 0.5L",
       description: "",
       price: "40Kr",
       allergies: [""],
-      image: "./Assets/images/cola.png",
+      image: "./Assets/images/krønsjiFantaOrangeZero.png",
     },
     {
       name: "Fanta Exotic 0.5L",
       description: "",
       price: "40Kr",
       allergies: [""],
-      image: "./Assets/images/cola.png",
+      image: "./Assets/images/krønsjiFantaExotic.png",
     },
     {
       name: "Sprite 0.5L",
       description: "",
       price: "40Kr",
       allergies: [""],
-      image: "./Assets/images/sprite.png",
+      image: "./Assets/images/krønsjiSprite.png",
     },
     {
       name: "Sprite Zero 0.5L",
       description: "",
       price: "40Kr",
       allergies: [""],
-      image: "./Assets/images/cola.png",
+      image: "./Assets/images/krønsjiSpriteZero.png",
     },
     {
       name: "Urge 0.5L",
@@ -489,7 +489,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if(imgElement.src != ""){
       menuItemElement.appendChild(imgElement);
     }
-   
+    
     menuItemElement.appendChild(textContainer);
 
     return menuItemElement;
