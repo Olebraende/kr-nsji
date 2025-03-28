@@ -53,6 +53,7 @@ h3 {
   position: absolute;
 }
 
+
 /* Navigation */
 .nav a {
   position: relative;
@@ -248,8 +249,10 @@ h3 {
   display: none;
 }
 
+
 #toTop.show {
   display: block;
+
 }
 
 /* Contact Form */
@@ -293,7 +296,7 @@ h3 {
   * {
     margin: 0;
     box-sizing: border-box;
-  }
+    }
   .container {
     flex-direction: column;
     align-items: center;
@@ -306,14 +309,14 @@ h3 {
   .menu-item:hover {
     transform: scale(1);
   }
-  .contact-container {
+  .contact-container{
     width: 100%;
     margin-top: 5px;
     margin-bottom: 25px;
     margin-left: 0px;
     max-width: 75vw;
   }
-  .header {
+  .header{
     height: 75px;
   }
   .sidebar {
@@ -323,7 +326,7 @@ h3 {
   .menu-items {
     grid-template-columns: auto;
   }
-  .sidebar {
+  .sidebar{
     order: 3;
   }
   .menu-item {
@@ -332,41 +335,41 @@ h3 {
     height: fit-content;
     order: 2;
   }
-  .button-filter-container {
+  .button-filter-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  .logo img {
+  .logo img{
     scale: 0.75;
     margin-left: -25px;
   }
-  .logo h1 {
+  .logo h1{
     display: none;
   }
-  .nav {
+  .nav{
     display: flex;
     flex-direction: row;
     align-items: center;
   }
-  .menu-text {
+  .menu-text{
     margin-top: 15px;
     margin-bottom: 15px;
     gap: 20px;
   }
 }
 
-@media (min-width: 769px) and (max-width: 1110px) {
-  .button-filter-container {
+@media (min-width: 769px) and (max-width:1110px) {
+  .button-filter-container{
     flex-wrap: wrap;
   }
-  .menu-item {
+  .menu-item{
     flex-direction: column;
     width: 320px;
   }
   .menu-items {
     grid-template-columns: auto;
   }
-  .menu-text {
+  .menu-text{
     gap: 0;
     margin-top: 0;
     margin-bottom: 0;
