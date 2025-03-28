@@ -534,10 +534,12 @@ document.addEventListener("DOMContentLoaded", () => {
       while (menuContainer.firstChild) {
         menuContainer.removeChild(menuContainer.firstChild);
       }
-
+      const name = document.querySelector('#menu-name');
+      
       // Render menu based on clicked button
       switch (e.target.id) {
         case "buttonAlle":
+          name.textContent = 'Hele Menyen';
           renderMenu(crunchyBurger);
           renderMenu(crunchyWrap);
           renderMenu(croissants);
@@ -551,36 +553,47 @@ document.addEventListener("DOMContentLoaded", () => {
           renderMenu(drikke);
           break;
         case "buttonBurger":
+          name.textContent = 'Krønsji Burger';
           renderMenu(crunchyBurger);
           break;
         case "buttonWraps":
+          name.textContent = 'Krønsji Wraps';
           renderMenu(crunchyWrap);
           break;
         case "buttonCroissant":
+          name.textContent = 'Croissants';
           renderMenu(croissants);
           break;
         case "buttonBaguette":
+          name.textContent = 'Krønsji Strip Baguette';
           renderMenu(baguettes);
           break;
         case "buttonFalafel":
+          name.textContent = 'Falafel';
           renderMenu(falafel);
           break;
         case "buttonWings":
+          name.textContent = 'Wings & Strips';
           renderMenu(wingsAndStrips);
           break;
         case "buttonCombo":
+          name.textContent = 'Combo & Snack Boxes';
           renderMenu(comboSnackBox);
           break;
         case "buttonMenu":
+          name.textContent = 'Meny';
           renderMenu(menyer);
           break;
         case "buttonPizza":
+          name.textContent = 'Pizza';
           renderMenu(pizza);
           break;
         case "buttonSides":
+          name.textContent = 'Sides';
           renderMenu(sides);
           break;
         case "buttonDrikke":
+          name.textContent = 'Drikke';
           renderMenu(drikke);
           break;
       }
