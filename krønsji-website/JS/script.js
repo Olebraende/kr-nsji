@@ -474,11 +474,13 @@ document.addEventListener("DOMContentLoaded", () => {
     nameElement.textContent = item.name;
 
     const descriptionElement = document.createElement("p");
+    descriptionElement.classList.add("menu-text-description");
     descriptionElement.textContent = item.description;
 
     const allergiesElement = document.createElement("p");
     if (item.allergies.length > 0) {
       const strongElement = document.createElement("strong");
+      allergiesElement.classList.add("menu-text-allergy");
       strongElement.textContent = "Allergener: ";
       
       allergiesElement.appendChild(strongElement);

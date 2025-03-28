@@ -25,7 +25,6 @@ body {
   scroll-behavior: smooth;
 }
 
-h1,
 h2,
 h3 {
   letter-spacing: 1px;
@@ -202,6 +201,13 @@ h3 {
   font-family: "Rethink Sans", sans-serif;
   font-size: 23px;
   margin-top: 0;
+}
+.menu-text-description{
+  line-height: 1.5;
+ }
+.menu-text-allergy{
+  color: #5e5e5e;
+  margin-top: 0px;
 }
 .price {
   font-weight: bold;
