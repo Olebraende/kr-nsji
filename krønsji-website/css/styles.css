@@ -408,11 +408,22 @@ h3 {
   .menu-text h3 {
     margin-top: 10px;
   }
+  .button-filter-container{
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+  .button-filter-container{
+    flex-wrap: wrap;
+  }
 }
 
 @media (min-width: 1023px) and (max-width: 1110px) {
   .menu-items {
     grid-template-columns: auto auto;
+  }
+  .button-filter-container{
+    flex-wrap: wrap;
   }
 }
 @media (min-width: 1365px) and (max-width: 1400px) {
@@ -421,6 +432,9 @@ h3 {
   }
   .menu-item{
     width: 480px;
+  }
+  .button-filter-container{
+    flex-wrap: wrap;
   }
 }
 
