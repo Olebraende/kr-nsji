@@ -8,6 +8,13 @@
   font-variation-settings: "wdth" 100;
 }
 
+.rethink-sans-font {
+  font-family: "Rethink Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
@@ -22,6 +29,7 @@ h1,
 h2,
 h3 {
   letter-spacing: 1px;
+  margin: 25px 0 0 0;
 }
 
 /* Header */
@@ -162,7 +170,9 @@ h3 {
   padding: 10px;
   width: 100%;
 }
-
+#menu-name{
+  margin-bottom: 20px;
+}
 .menu-items {
   display: grid;
   grid-template-columns: auto auto;
@@ -184,11 +194,15 @@ h3 {
 .menu-text {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: start;
   line-height: 1;
   width: 100%;
 }
-
+.menu-text h3{
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 23px;
+  margin-top: 0;
+}
 .price {
   font-weight: bold;
   text-align: right;

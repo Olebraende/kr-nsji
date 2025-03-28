@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const crunchyBurger = [
     {
       name: "Krønsji Burger",
-      description: "2 Strips + 2 Crispy Salad + Cheese + BBQ + Chili Mayo",
+      description: "2 Strips, 2 Crispy Salad, Cheese, BBQ, Chili Mayo",
       price: "149,-",
       allergies: ["gluten", "egg"],
       image: "./Assets/images/krønsjiBurger.jpeg",
@@ -22,35 +22,35 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       name: "Krønsji Burger Korean",
       description:
-        "2 Korean Strips + 2 Crispy Salad + Cheese + BBQ + Chili Mayo",
+        "2 Korean Strips, 2 Crispy Salad, Cheese, BBQ, Chili Mayo",
       price: "159,-",
       allergies: ["gluten", "soya", "egg"],
       image: "./Assets/images/krønsjiBurgerKorean.jpg",
     },
     {
       name: "Krønsji Burger Hot",
-      description: "2 Hot Strips + 2 Crispy Salad + Cheese + BBQ + Chili Mayo",
+      description: "2 Hot Strips, 2 Crispy Salad, Cheese, BBQ, Chili Mayo",
       price: "159,-",
       allergies: ["gluten", "soya", "egg"],
       image: "./Assets/images/krønsjiBurgerHot.jpg",
     },
     {
       name: "Krønsji Burger Honey Mustard",
-      description: "2 Strips + 2 Crispy Salad + Honey Mustard + Cheese + BBQ",
+      description: "2 Strips, 2 Crispy Salad, Honey Mustard, Cheese, BBQ",
       price: "159,-",
       allergies: ["gluten", "sennep", "soya", "egg"],
       image: "./Assets/images/krønsjiBurgerHoneyMustard.jpg",
     },
     {
       name: "Krønsji Burger Coleslaw",
-      description: "4 Strips + 2 Crispy Salad + Cheese + BBQ + Chili Mayo",
+      description: "4 Strip, 2 Crispy Salad, Cheese, BBQ + Chili Mayo",
       price: "149,-",
       allergies: ["gluten", "soya", "egg"],
       image: "./Assets/images/krønsjiColeslawBurger.jpg",
     },
     {
       name: "Double Krønsji Burger + Mozzarella Sticks",
-      description: "2 Strips + 2 Crispy Salad + Cheese + BBQ + Chili Mayo",
+      description: "2 Strips, 2 Crispy Salad, Cheese, BBQ, Chili Mayo",
       price: "210,-",
       allergies: ["gluten", "soya", "egg"],
       image: "./Assets/images/krønsjiDoubleBurger.jpeg",
@@ -86,21 +86,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const croissants = [
     {
       name: "Sweet Croissant",
-      description: "1 Strip + Sweet Chili + Cheese",
+      description: "1 Strip, Sweet Chili, Cheese",
       price: "99,-",
       allergies: ["gluten", "egg"],
       image: "./Assets/images/krønsjiCriossantSweet.jpg",
     },
     {
       name: "Honey Croissant",
-      description: "1 Strip + Honey Mustard + Cheese",
+      description: "1 Strip, Honey Mustard, Cheese",
       price: "99,-",
       allergies: ["gluten", "sennep", "egg"],
       image: "./Assets/images/krønsjiCroissantHoneyMustard.jpeg",
     },
     {
       name: "BBQ Croissant",
-      description: "1 Strip + BBQ + Cheese",
+      description: "1 Strip, BBQ, Cheese",
       price: "99,-",
       allergies: ["gluten", "soya", "egg"],
       image: "./Assets/images/krønsjiCriossantBBQ.jpg",
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const baguettes = [
     {
       name: "Krønsji Strips Baguette",
-      description: "2 Strips + Salad + Fries + BBQ + Chili Mayo",
+      description: "2 Strips, Salad, Fries, BBQ, Chili Mayo",
       price: "149,-",
       allergies: ["gluten", "soya", "egg"],
       image: "./Assets/images/krønsjiBaguette.jpeg",
@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const comboSnackBox = [
     {
       name: "Combo Box",
-      description: "3 Strips + 3 Wings",
+      description: "3 Strips, 3 Wings",
       price: "219,-",
       allergies: ["gluten", "egg"],
       image: "./Assets/images/krønsjiCombo3+3.jpg",
@@ -214,7 +214,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       name: "Snackbox 1",
       description:
-        "Fries + Crispy Onions + Jalapenos/Chili Mayo + BBQ + Cheese",
+        "Fries, Crispy Onions, Jalapenos/Chili Mayo, BBQ, Cheese",
       price: "100,-",
       allergies: ["gluten", "egg"],
       image: "./Assets/images/krønsjiSnackBox1.jpg",
@@ -222,7 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       name: "Snackbox 2",
       description:
-        "2 Strips + Fries + Crispy Onions + Jalapenos/Chili Mayo + BBQ + Cheese",
+        "2 Strips, Fries, Crispy Onions, Jalapenos/Chili Mayo, BBQ, Cheese",
       price: "139,-",
       allergies: ["gluten", "egg"],
       image: "./Assets/images/krønsjiSnackBox234.jpg",
@@ -230,7 +230,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       name: "Snackbox Korean",
       description:
-        "2 Korean Strips + Fries + Crispy Onions + Jalapenos/Chili Mayo + BBQ + Cheese",
+        "2 Korean Strips, Fries, Crispy Onions, Jalapenos/Chili Mayo, BBQ, Cheese",
       price: "158,-",
       allergies: ["gluten", "soya, egg"],
       image: "./Assets/images/krønsjiSnackBox234.jpg",
@@ -238,7 +238,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       name: "Snackbox Hot",
       description:
-        "2 Hot Strips + Fries + Crispy Onions + Jalapenos/Chili Mayo + BBQ + Cheese",
+        "2 Hot Strips, Fries, Crispy Onions, Jalapenos/Chili Mayo, BBQ, Cheese",
       price: "158,-",
       allergies: ["gluten", "egg"],
       image: "./Assets/images/krønsjiSnackBox234.jpg",
@@ -255,21 +255,21 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       name: "Crispy Wings Meny",
-      description: "Wings (6 stk) + Pommesfrites + Brus",
+      description: "Wings (6 stk), Pommesfrites, Brus",
       price: "179,-",
       allergies: ["gluten", "egg"],
       image: "./Assets/images/krønsjiCombo3+3.jpg",
     },
     {
       name: "Falafel Meny",
-      description: "Rullefalafel + Brus",
+      description: "Rullefalafel, Brus",
       price: "150,-",
       allergies: ["gluten", "egg"],
       image: "./Assets/images/krønsjiCombo3+3.jpg",
     },
     {
       name: "Falafel Meny",
-      description: "Falafel (6 stk) + Tahini saus + Brus",
+      description: "Falafel (6 stk), Tahini saus, Brus",
       price: "120,-",
       allergies: ["gluten", "egg"],
       image: "./Assets/images/krønsjiCombo3+3.jpg",
@@ -369,14 +369,14 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "Normal Fries",
       description: "",
       price: "57,-",
-      allergies: [""],
+      allergies: [],
       image: "./Assets/images/krønsjiFries.jpg",
     },
     {
       name: "Sweet Fries",
       description: "",
       price: "67,-",
-      allergies: [""],
+      allergies: [],
       image: "./Assets/images/krønsjiSweetFries.jpg",
     },
     {
@@ -402,56 +402,56 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "Coca Cola 0.5L",
       description: "",
       price: "40,-",
-      allergies: [""],
+      allergies: [],
       image: "./Assets/images/krønsjiCocaCola.png",
     },
     {
       name: "Coca Cola Zero 0.5L",
       description: "",
       price: "40,-",
-      allergies: [""],
+      allergies: [],
       image: "./Assets/images/krønsjiColaZero.png",
     },
     {
       name: "Fanta Orange 0.5L",
       description: "",
       price: "40,-",
-      allergies: [""],
+      allergies: [],
       image: "./Assets/images/krønsjiFantaOrange.png",
     },
     {
       name: "Fanta Orange Zero 0.5L",
       description: "",
       price: "40,-",
-      allergies: [""],
+      allergies: [],
       image: "./Assets/images/krønsjiFantaOrangeZero.png",
     },
     {
       name: "Fanta Exotic 0.5L",
       description: "",
       price: "40,-",
-      allergies: [""],
+      allergies: [],
       image: "./Assets/images/krønsjiFantaExotic.png",
     },
     {
       name: "Sprite 0.5L",
       description: "",
       price: "40,-",
-      allergies: [""],
+      allergies: [],
       image: "./Assets/images/krønsjiSprite.png",
     },
     {
       name: "Sprite Zero 0.5L",
       description: "",
       price: "40,-",
-      allergies: [""],
+      allergies: [],
       image: "./Assets/images/krønsjiSpriteZero.png",
     },
     {
       name: "Urge 0.5L",
       description: "",
       price: "40,-",
-      allergies: [""],
+      allergies: [],
       image: "./Assets/images/krønsjiUrge.png",
     },
   ];
