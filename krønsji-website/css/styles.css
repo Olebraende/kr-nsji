@@ -298,8 +298,16 @@ h3 {
   font-size: 1.2em;
   margin: 10px 0;
 }
-
-.email-link,
+.email-link{
+  display: inline-block;
+  width: 200px;
+  height: 25px;
+  background-image: url(../Assets/images/krønsjiEpost1.png);
+  background-size: cover;
+}
+.email-link:hover{
+background-image: url(../Assets/images/krønsjiEpost2.png);
+}
 .phone-link {
   font-size: 1.2em;
   color: #d62626;
@@ -307,7 +315,6 @@ h3 {
   font-weight: bold;
 }
 
-.email-link:hover,
 .phone-link:hover {
   text-decoration: underline;
 }
