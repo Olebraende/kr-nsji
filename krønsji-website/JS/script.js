@@ -265,14 +265,14 @@ document.addEventListener("DOMContentLoaded", () => {
       description: "Rullefalafel, Brus",
       price: "150,-",
       allergies: ["gluten", "egg"],
-      image: "./Assets/images/krønsjiCombo3+3.jpg",
+      image: "./Assets/images/krønsjiRullefalafel.jpg",
     },
     {
       name: "Falafel Meny",
       description: "Falafel (6 stk), Tahini saus, Brus",
       price: "120,-",
       allergies: ["gluten", "egg"],
-      image: "./Assets/images/krønsjiCombo3+3.jpg",
+      image: "./Assets/images/krønsjiFalafel6stk.jpg",
     },
   ];
 
