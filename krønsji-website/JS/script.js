@@ -510,18 +510,36 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Initial rendering av menyen
+  const name = document.querySelector('#menu-name');
+  const titleContainer = document.querySelector(".menu-items");
+  const addTitle = (text) => {
+    const title = document.createElement("h2"); 
+    title.textContent = text;
+    titleContainer.appendChild(title);
+  };
 
+  // Initial rendering av menyen
+  addTitle("Krønsji Burger");
   renderMenu(crunchyBurger);
+  addTitle("Krønsji Wraps");
   renderMenu(crunchyWrap);
+  addTitle("Krønsji Croissants");
   renderMenu(croissants);
+  addTitle("Krønsji Baguettes");
   renderMenu(baguettes);
+  addTitle("Falafel");
   renderMenu(falafel);
+  addTitle("Wings & Strips");
   renderMenu(wingsAndStrips);
+  addTitle("Combo & Snackbox");
   renderMenu(comboSnackBox);
+  addTitle("Menyer");
   renderMenu(menyer);
-  renderMenu(pizza)
+  addTitle("Pizza");
+  renderMenu(pizza);
+  addTitle("Sides");
   renderMenu(sides);
+  addTitle("Drikke");
   renderMenu(drikke);
 
   buttons.forEach((button) => {
@@ -536,22 +554,32 @@ document.addEventListener("DOMContentLoaded", () => {
       while (menuContainer.firstChild) {
         menuContainer.removeChild(menuContainer.firstChild);
       }
-      const name = document.querySelector('#menu-name');
-      
+
       // Render menu based on clicked button
       switch (e.target.id) {
         case "buttonAlle":
           name.textContent = 'Hele Menyen';
+          addTitle("Krønsji Burger");
           renderMenu(crunchyBurger);
+          addTitle("Krønsji Wraps");
           renderMenu(crunchyWrap);
+          addTitle("Krønsji Croissants");
           renderMenu(croissants);
+          addTitle("Krønsji Baguettes");
           renderMenu(baguettes);
+          addTitle("Falafel");
           renderMenu(falafel);
+          addTitle("Wings & Strips");
           renderMenu(wingsAndStrips);
+          addTitle("Combo & Snackbox");
           renderMenu(comboSnackBox);
+          addTitle("Menyer");
           renderMenu(menyer);
+          addTitle("Pizza");
           renderMenu(pizza);
+          addTitle("Sides");
           renderMenu(sides);
+          addTitle("Drikke");
           renderMenu(drikke);
           break;
         case "buttonBurger":
