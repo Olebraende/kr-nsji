@@ -21,8 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       name: "Krønsji Burger Korean",
-      description:
-        "2 Korean Strips, 2 Crispy Salad, Cheese, BBQ, Chili Mayo",
+      description: "2 Korean Strips, 2 Crispy Salad, Cheese, BBQ, Chili Mayo",
       price: "159,-",
       allergies: ["gluten", "soya", "egg"],
       image: "./Assets/images/krønsjiBurgerKorean.jpg",
@@ -213,8 +212,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       name: "Snackbox 1",
-      description:
-        "Fries, Crispy Onions, Jalapenos/Chili Mayo, BBQ, Cheese",
+      description: "Fries, Crispy Onions, Jalapenos/Chili Mayo, BBQ, Cheese",
       price: "100,-",
       allergies: ["gluten", "egg"],
       image: "./Assets/images/krønsjiSnackBox1.jpg",
@@ -244,11 +242,12 @@ document.addEventListener("DOMContentLoaded", () => {
       image: "./Assets/images/krønsjiSnackBox234.jpg",
     },
   ];
-  // Alle Menyer 
+  // Alle Menyer
   const menyer = [
     {
       name: "Crispy Burger Meny",
-      description: "Crispy Strips, Coleslaw, Brioche brød, Prommesfrites + Brus",
+      description:
+        "Crispy Strips, Coleslaw, Brioche brød, Prommesfrites + Brus",
       price: "219,-",
       allergies: ["gluten", "egg"],
       image: "./Assets/images/krønsjiCombo3+3.jpg",
@@ -286,7 +285,8 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       name: "Svolten Pizza",
-      description: "ost, marinert kylling, marinert biff, paprika, løk, sjampinjong",
+      description:
+        "ost, marinert kylling, marinert biff, paprika, løk, sjampinjong",
       price: "159,- / 259,-",
       allergies: ["gluten"],
       image: "",
@@ -307,21 +307,24 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       name: "Kebab Pizza",
-      description: "ost, kebab kjøtt, salat, agurk, rødløk, tomat, hvitløk, dressing",
+      description:
+        "ost, kebab kjøtt, salat, agurk, rødløk, tomat, hvitløk, dressing",
       price: "159,- / 259,-",
       allergies: ["gluten, egg"],
       image: "",
     },
     {
       name: "Krønsji Pizza",
-      description: "ost, hvit saus, crispy strips, pomemes frites, honey mustard, dressing",
+      description:
+        "ost, hvit saus, crispy strips, pomemes frites, honey mustard, dressing",
       price: "179,- / 279,-",
       allergies: ["gluten, egg"],
       image: "",
     },
     {
       name: "Krønsji Hot Pizza",
-      description: "ost, hvit saus, crispy strips, pomemes frites, jalapeños, chili mayo dressing",
+      description:
+        "ost, hvit saus, crispy strips, pomemes frites, jalapeños, chili mayo dressing",
       price: "179,- / 279,-",
       allergies: ["gluten, egg"],
       image: "",
@@ -361,7 +364,7 @@ document.addEventListener("DOMContentLoaded", () => {
       allergies: ["gluten"],
       image: "",
     },
-  ]
+  ];
 
   //All sides
   const sides = [
@@ -465,7 +468,6 @@ document.addEventListener("DOMContentLoaded", () => {
       imgElement.src = item.image;
       imgElement.alt = item.name;
     }
-   
 
     const textContainer = document.createElement("div");
     textContainer.classList.add("menu-text");
@@ -482,9 +484,11 @@ document.addEventListener("DOMContentLoaded", () => {
       const strongElement = document.createElement("strong");
       allergiesElement.classList.add("menu-text-allergy");
       strongElement.textContent = "Allergener: ";
-      
+
       allergiesElement.appendChild(strongElement);
-      allergiesElement.appendChild(document.createTextNode(item.allergies.join(", ")));
+      allergiesElement.appendChild(
+        document.createTextNode(item.allergies.join(", "))
+      );
     }
     const priceElement = document.createElement("p");
     priceElement.textContent = item.price;
@@ -494,10 +498,10 @@ document.addEventListener("DOMContentLoaded", () => {
     textContainer.appendChild(descriptionElement);
     textContainer.appendChild(allergiesElement);
     textContainer.appendChild(priceElement);
-    if(imgElement.src != ""){
+    if (imgElement.src != "") {
       menuItemElement.appendChild(imgElement);
     }
-    
+
     menuItemElement.appendChild(textContainer);
 
     return menuItemElement;
@@ -510,10 +514,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  const name = document.querySelector('#menu-name');
+  const name = document.querySelector("#menu-name");
   const titleContainer = document.querySelector(".menu-items");
   const addTitle = (text) => {
-    const title = document.createElement("h2"); 
+    const title = document.createElement("h2");
     title.textContent = text;
     titleContainer.appendChild(title);
   };
@@ -558,7 +562,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Render menu based on clicked button
       switch (e.target.id) {
         case "buttonAlle":
-          name.textContent = 'Hele Menyen';
+          name.textContent = "Hele Menyen";
           addTitle("Krønsji Burger");
           renderMenu(crunchyBurger);
           addTitle("Krønsji Wraps");
@@ -583,47 +587,47 @@ document.addEventListener("DOMContentLoaded", () => {
           renderMenu(drikke);
           break;
         case "buttonBurger":
-          name.textContent = 'Krønsji Burger';
+          name.textContent = "Krønsji Burger";
           renderMenu(crunchyBurger);
           break;
         case "buttonWraps":
-          name.textContent = 'Krønsji Wraps';
+          name.textContent = "Krønsji Wraps";
           renderMenu(crunchyWrap);
           break;
         case "buttonCroissant":
-          name.textContent = 'Croissants';
+          name.textContent = "Croissants";
           renderMenu(croissants);
           break;
         case "buttonBaguette":
-          name.textContent = 'Krønsji Strip Baguette';
+          name.textContent = "Krønsji Strip Baguette";
           renderMenu(baguettes);
           break;
         case "buttonFalafel":
-          name.textContent = 'Falafel';
+          name.textContent = "Falafel";
           renderMenu(falafel);
           break;
         case "buttonWings":
-          name.textContent = 'Wings & Strips';
+          name.textContent = "Wings & Strips";
           renderMenu(wingsAndStrips);
           break;
         case "buttonCombo":
-          name.textContent = 'Combo & Snack Boxes';
+          name.textContent = "Combo & Snack Boxes";
           renderMenu(comboSnackBox);
           break;
         case "buttonMenu":
-          name.textContent = 'Meny';
+          name.textContent = "Meny";
           renderMenu(menyer);
           break;
         case "buttonPizza":
-          name.textContent = 'Pizza';
+          name.textContent = "Pizza";
           renderMenu(pizza);
           break;
         case "buttonSides":
-          name.textContent = 'Sides';
+          name.textContent = "Sides";
           renderMenu(sides);
           break;
         case "buttonDrikke":
-          name.textContent = 'Drikke';
+          name.textContent = "Drikke";
           renderMenu(drikke);
           break;
       }
