@@ -1,5 +1,14 @@
 // Dette prosjektet er laget av kodehode-gjengen til JobLoop.
 
+/* 
+  Prosjektet er primært utviklet av:
+  - Nicklas Nielsen - https://www.linkedin.com/in/nicklas-nielsen-b048b7141/
+  - Ole Mathias Brænde - https://www.linkedin.com/in/olebrande/
+
+  Det meste av design er laget av:
+  - Pil August - https://www.linkedin.com/in/pil-august-ekanger-058a6b342/
+*/
+
 document.addEventListener("DOMContentLoaded", () => {
   const menuContainer = document.querySelector(".menu-items");
   const searchInput = document.querySelector("#menu-search");
