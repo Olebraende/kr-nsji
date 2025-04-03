@@ -4,7 +4,7 @@
   Prosjektet er primært utviklet & designet av:
   - Nicklas Nielsen - https://www.linkedin.com/in/nicklas-nielsen-b048b7141/ | https://github.com/nicklasn96
   - Ole Mathias Brænde - https://www.linkedin.com/in/olebrande/ |  https://github.com/Olebraende
-  - Pil August - https://www.linkedin.com/in/pil-august-ekanger-058a6b342/ | https://github.com/pilaugust
+  - Pil August Ekanger - https://www.linkedin.com/in/pil-august-ekanger-058a6b342/ | https://github.com/pilaugust
 */
 
 document.addEventListener("DOMContentLoaded", () => {
