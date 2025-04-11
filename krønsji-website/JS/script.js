@@ -254,6 +254,13 @@ document.addEventListener("DOMContentLoaded", () => {
       image: "./Assets/images/krønsjiBurger.jpeg",
     },
     {
+      name: "Chicken Fries Meny",
+      description: "Chickennuggets (5 stk), Snackbox, Brus",
+      price: "199,-",
+      allergies: ["gluten", "egg"],
+      image: "./Assets/images/krønsjiNuggets.jpg",
+    },
+    {
       name: "Crispy Wings Meny",
       description: "Wings (6 stk), Pommesfrites, Brus",
       price: "199,-",
