@@ -699,7 +699,7 @@ function loadAnalytics() {
   // Google Analytics 4
   const scriptTag = document.createElement("script");
   scriptTag.setAttribute("async", "");
-  scriptTag.setAttribute("src", "https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID");
+  scriptTag.setAttribute("src", "https://www.googletagmanager.com/gtag/js?id=G-J6Z9BCBVF9");
   document.head.appendChild(scriptTag);
 
   window.dataLayer = window.dataLayer || [];
