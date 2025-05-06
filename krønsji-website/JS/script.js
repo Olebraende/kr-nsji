@@ -707,6 +707,6 @@ function loadAnalytics() {
   window.gtag = gtag;
 
   gtag('js', new Date());
-  gtag('config', 'GA_MEASUREMENT_ID');
+  gtag('config', 'G-J6Z9BCBVF9');
 }
 
