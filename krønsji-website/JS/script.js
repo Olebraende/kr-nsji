@@ -675,3 +675,38 @@ document.addEventListener("DOMContentLoaded", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const banner = document.getElementById("cookie-banner");
+  const acceptBtn = document.getElementById("accept-cookies");
+
+  if (!localStorage.getItem("cookiesAccepted")) {
+    banner.classList.remove("hidden");
+  }
+
+  acceptBtn.addEventListener("click", () => {
+    localStorage.setItem("cookiesAccepted", "true");
+    banner.classList.add("hidden");
+    loadAnalytics();
+  });
+
+  if (localStorage.getItem("cookiesAccepted") === "true") {
+    loadAnalytics();
+  }
+});
+
+function loadAnalytics() {
+  // Google Analytics 4
+  const scriptTag = document.createElement("script");
+  scriptTag.setAttribute("async", "");
+  scriptTag.setAttribute("src", "https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID");
+  document.head.appendChild(scriptTag);
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  window.gtag = gtag;
+
+  gtag('js', new Date());
+  gtag('config', 'GA_MEASUREMENT_ID');
+}
+
