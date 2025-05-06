@@ -679,9 +679,14 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
   const banner = document.getElementById("cookie-banner");
   const acceptBtn = document.getElementById("accept-cookies");
+  const declineBtn = document.getElementById("decline-cookies");
 
-  if (!localStorage.getItem("cookiesAccepted")) {
+  const cookiesAccepted = localStorage.getItem("cookiesAccepted");
+
+  if (cookiesAccepted === null) {
     banner.classList.remove("hidden");
+  } else if (cookiesAccepted === "true") {
+    loadAnalytics();
   }
 
   acceptBtn.addEventListener("click", () => {
@@ -690,17 +695,18 @@ document.addEventListener("DOMContentLoaded", () => {
     loadAnalytics();
   });
 
-  if (localStorage.getItem("cookiesAccepted") === "true") {
-    loadAnalytics();
-  }
+  declineBtn.addEventListener("click", () => {
+    localStorage.setItem("cookiesAccepted", "false");
+    banner.classList.add("hidden");
+    // Ikke last inn analytics
+  });
 });
 
 function loadAnalytics() {
-  // Google Analytics 4
-  const scriptTag = document.createElement("script");
-  scriptTag.setAttribute("async", "");
-  scriptTag.setAttribute("src", "https://www.googletagmanager.com/gtag/js?id=G-J6Z9BCBVF9");
-  document.head.appendChild(scriptTag);
+  const script = document.createElement("script");
+  script.src = "https://www.googletagmanager.com/gtag/js?id=G-J6Z9BCBVF9";
+  script.async = true;
+  document.head.appendChild(script);
 
   window.dataLayer = window.dataLayer || [];
   function gtag(){ dataLayer.push(arguments); }
@@ -709,4 +715,3 @@ function loadAnalytics() {
   gtag('js', new Date());
   gtag('config', 'G-J6Z9BCBVF9');
 }
-

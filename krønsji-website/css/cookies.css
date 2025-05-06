@@ -1,0 +1,52 @@
+body {
+    font-family: "Patrick Hand", cursive;
+    background-color: #fff3cd;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  main.contact-container {
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 30px;
+    margin-top: -25px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  main h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  main h2 {
+    font-size: 1.3rem;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  
+  main p, main ul {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  main ul {
+    padding-left: 20px;
+    text-align: left;
+  }
+  
+  a {
+    color: #d62626;
+    text-decoration: underline;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
